@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "0ee94443-8c6c-46e8-8ab6-04af562a25ec",
+		"name": "Grupo CDS - Totaldoc (dev)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8476176"
+	},
+	"item": [
+		{
+			"name": "Crear XML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dte\": {\r\n        \"datosGenerales\": {\r\n            \"tipo\": \"FACT\",\r\n            \"fechaHoraEmision\": \"2023-01-01T12:56:49.6090\",\r\n            \"codigoMoneda\": \"GTQ\"\r\n        },\r\n        \"emisor\": {\r\n            \"nitEmisor\": \"1234\",\r\n            \"nombreEmisor\": \"nombreEmisor\",\r\n            \"codigoEstablecimiento\": 1,\r\n            \"nombreComercial\": \"nombreComercial\",\r\n            \"correoEmisor\": \"correo@emisor.com\",\r\n            \"afiliacionIVA\": \"GEN\",\r\n            \"direccion\": {\r\n                \"direccion\": \"direccionEmisor\",\r\n                \"codigoPostal\": 0,\r\n                \"municipio\": \"municipioEmisor\",\r\n                \"departamento\": \"departamentoEmisor\",\r\n                \"pais\": \"GT\"\r\n            }\r\n        },\r\n        \"receptor\": {\r\n            \"idReceptor\": \"CF\",\r\n            \"nombreReceptor\": \"nombreReceptor\",\r\n            \"correoReceptor\": \"correo@receptor.com\",\r\n            \"direccion\": {\r\n                \"direccion\": \"direccionReceptor\",\r\n                \"codigoPostal\": 0,\r\n                \"municipio\": \"municipioReceptor\",\r\n                \"departamento\": \"departamentoReceptor\",\r\n                \"pais\": \"GT\"\r\n            }\r\n        },\r\n        \"frases\": [\r\n            {\r\n                \"tipoFrase\": 1,\r\n                \"codigoEscenario\": 1\r\n            }\r\n        ],\r\n        \"items\": [\r\n            {\r\n                \"bienOServicio\": \"B\",\r\n                \"cantidad\": 1,\r\n                \"unidadMedida\": \"UN\",\r\n                \"descripcion\": \"descripcion del producto\",\r\n                \"precioUnitario\": 500,\r\n                \"precio\": 500,\r\n                \"descuento\": 0,\r\n                \"total\": 500,\r\n                \"impuestos\": [\r\n                    {\r\n                        \"nombreCorto\": \"IVA\",\r\n                        \"codigoUnidadGravable\": 1,\r\n                        \"montoGravable\": 446.4285714285,\r\n                        \"montoImpuesto\": 53.5714285714\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"totalImpuestos\": [\r\n            {\r\n                \"nombreCorto\": \"IVA\",\r\n                \"totalMontoImpuesto\": 53.714285714\r\n            }\r\n        ],\r\n        \"adendas\": {\r\n            \"valores\": {\r\n                \"nombreAdenda\": \"Valor de la adenda\"\r\n            }\r\n        },\r\n        \"granTotal\": 5000\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://freyja-dev.totaldoc.io/api/xml?firma=true",
+					"protocol": "https",
+					"host": [
+						"freyja-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"api",
+						"xml"
+					],
+					"query": [
+						{
+							"key": "firma",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Firmar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apiKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dte\": {\r\n        \"nit_transmitter\": \"1234\",\r\n        \"xml_dte\": \"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ingestor-dev.totaldoc.io/v1.0/signature",
+					"protocol": "https",
+					"host": [
+						"ingestor-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"v1.0",
+						"signature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Certificar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apiKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dte\": {\r\n        \"nit_transmitter\": \"1234\",\r\n        \"serie\": \"A\",\r\n        \"number\": 1,\r\n        \"xml_dte\": \"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ingestor-dev.totaldoc.io/v1.0/dte",
+					"protocol": "https",
+					"host": [
+						"ingestor-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"v1.0",
+						"dte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener PDF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://print-dev.totaldoc.io/pdf?uuid=1234",
+					"protocol": "https",
+					"host": [
+						"print-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"pdf"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar DTE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apiKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ingestor-dev.totaldoc.io/v1.0/dte?nit=1234&refID=1234",
+					"protocol": "https",
+					"host": [
+						"ingestor-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"v1.0",
+						"dte"
+					],
+					"query": [
+						{
+							"key": "nit",
+							"value": "1234"
+						},
+						{
+							"key": "refID",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta NIT",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://freyja-dev.totaldoc.io/api/nit/1234",
+					"protocol": "https",
+					"host": [
+						"freyja-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"api",
+						"nit",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta CUI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "appKey",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://freyja-dev.totaldoc.io/api/cui/1234",
+					"protocol": "https",
+					"host": [
+						"freyja-dev",
+						"totaldoc",
+						"io"
+					],
+					"path": [
+						"api",
+						"cui",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
