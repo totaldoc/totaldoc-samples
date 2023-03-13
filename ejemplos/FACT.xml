@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dte:GTDocumento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 Version="0.1"
+                 xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0">
+	<dte:SAT ClaseDocumento="dte">
+		<dte:DTE ID="DatosCertificados">
+			<dte:DatosEmision ID="DatosEmision">
+				<dte:DatosGenerales Tipo="FACT"
+				                    FechaHoraEmision="2022-03-07T10:18:45.727-06:00"
+				                    CodigoMoneda="GTQ"/>
+				<dte:Emisor NITEmisor="1234"
+				            NombreEmisor="RazonSocial"
+				            CodigoEstablecimiento="1"
+				            NombreComercial="NombreComercial"
+				            CorreoEmisor="Correo@Emisor.Opcional"
+				            AfiliacionIVA="GEN">
+					<dte:DireccionEmisor>
+						<dte:Direccion>DireccionEmisor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioEmisor</dte:Municipio>
+						<dte:Departamento>DepartamentoEmisor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionEmisor>
+				</dte:Emisor>
+				<dte:Receptor IDReceptor="CF"
+				              NombreReceptor="NombreReceptor"
+				              CorreoReceptor="Correo@Receptor.Opcional">
+					<dte:DireccionReceptor>
+						<dte:Direccion>DireccionReceptor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioReceptor</dte:Municipio>
+						<dte:Departamento>DepartamentoReceptor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionReceptor>
+				</dte:Receptor>
+				<dte:Frases>
+					<dte:Frase TipoFrase="1"
+					           CodigoEscenario="1"/>
+					<dte:Frase TipoFrase="2"
+					           CodigoEscenario="1"/>
+				</dte:Frases>
+				<dte:Items>
+					<dte:Item NumeroLinea="1"
+					          BienOServicio="B">
+						<dte:Cantidad>2</dte:Cantidad>
+						<dte:UnidadMedida>UN</dte:UnidadMedida>
+						<dte:Descripcion>Descripción</dte:Descripcion>
+						<dte:PrecioUnitario>3</dte:PrecioUnitario>
+						<dte:Precio>6</dte:Precio>
+						<dte:Descuento>1</dte:Descuento>
+						<dte:Impuestos>
+							<dte:Impuesto>
+								<dte:NombreCorto>IVA</dte:NombreCorto>
+								<dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+								<dte:MontoGravable>4.4642857143</dte:MontoGravable>
+								<dte:MontoImpuesto>0.5357142857</dte:MontoImpuesto>
+							</dte:Impuesto>
+						</dte:Impuestos>
+						<dte:Total>5</dte:Total>
+					</dte:Item>
+				</dte:Items>
+				<dte:Totales>
+					<dte:TotalImpuestos>
+						<dte:TotalImpuesto NombreCorto="IVA"
+						                   TotalMontoImpuesto="0.5357142857"/>
+					</dte:TotalImpuestos>
+					<dte:GranTotal>5</dte:GranTotal>
+				</dte:Totales>
+			</dte:DatosEmision>
+		</dte:DTE>
+		<dte:Adenda>
+			<dte:SERIE_INT>AA</dte:SERIE_INT>
+			<dte:NUMERO_INT>5545</dte:NUMERO_INT>
+			<dte:VENDEDOR_CODIGO_INT>9</dte:VENDEDOR_CODIGO_INT>
+		</dte:Adenda>
+	</dte:SAT>
+</dte:GTDocumento>

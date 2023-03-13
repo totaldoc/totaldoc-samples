@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dte:GTDocumento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xmlns:cno="http://www.sat.gob.gt/face2/ComplementoReferenciaNota/0.1.0"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 Version="0.1"
+                 xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales Tipo="NDEB"
+                                    FechaHoraEmision="2023-01-26T13:20:38.395-06:00"
+                                    CodigoMoneda="GTQ"/>
+                <dte:Emisor NITEmisor="1234"
+                            NombreEmisor="RazonSocial"
+                            CodigoEstablecimiento="1"
+                            NombreComercial="NombreComercial"
+                            AfiliacionIVA="GEN">
+                    <dte:DireccionEmisor>
+                        <dte:Direccion>DireccionEmisor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioEmisor</dte:Municipio>
+                        <dte:Departamento>DepartamentoEmisor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor IDReceptor="CF"
+                              NombreReceptor="NombreReceptor">
+                    <dte:DireccionReceptor>
+                        <dte:Direccion>DireccionReceptor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioReceptor</dte:Municipio>
+                        <dte:Departamento>DepartamentoReceptor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionReceptor>
+                </dte:Receptor>
+                <dte:Items>
+                    <dte:Item NumeroLinea="1"
+                              BienOServicio="B">
+                        <dte:Cantidad>2.0</dte:Cantidad>
+                        <dte:UnidadMedida>UN</dte:UnidadMedida>
+                        <dte:Descripcion>Descripción</dte:Descripcion>
+                        <dte:PrecioUnitario>3.0</dte:PrecioUnitario>
+                        <dte:Precio>6.0</dte:Precio>
+                        <dte:Impuestos>
+                            <dte:Impuesto>
+                                <dte:NombreCorto>IVA</dte:NombreCorto>
+                                <dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+                                <dte:MontoGravable>5.3571428571</dte:MontoGravable>
+                                <dte:MontoImpuesto>0.6428571429</dte:MontoImpuesto>
+                            </dte:Impuesto>
+                        </dte:Impuestos>
+                        <dte:Total>6.0</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:TotalImpuestos>
+                        <dte:TotalImpuesto NombreCorto="IVA"
+                                           TotalMontoImpuesto="0.6428571429"/>
+                    </dte:TotalImpuestos>
+                    <dte:GranTotal>6.0</dte:GranTotal>
+                </dte:Totales>
+                <dte:Complementos>
+                    <dte:Complemento IDComplemento="ReferenciasNota"
+                                     NombreComplemento="ReferenciasNota"
+                                     URIComplemento="http://www.sat.gob.gt/face2/ComplementoReferenciaNota/0.1.0">
+                        <cno:ReferenciasNota Version="0"
+                                             xmlns:cno="http://www.sat.gob.gt/face2/ComplementoReferenciaNota/0.1.0"
+                                             NumeroAutorizacionDocumentoOrigen="UUID del documento al que se le aplicara la Nota de Débito"
+                                             SerieDocumentoOrigen="Serie del documento al que se le aplicara la Nota de Débito"
+                                             NumeroDocumentoOrigen="Numero del documento al que se le aplicara la Nota de Débito"
+                                             FechaEmisionDocumentoOrigen="2022-03-24"
+                                             MotivoAjuste="Motivo por el que se realiza la Nota de Débito"/>
+                    </dte:Complemento>
+                </dte:Complementos>
+            </dte:DatosEmision>
+        </dte:DTE>
+    </dte:SAT>
+</dte:GTDocumento>

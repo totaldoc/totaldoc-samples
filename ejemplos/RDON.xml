@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<dte:GTDocumento xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 Version="0.1"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales CodigoMoneda="GTQ"
+                                    FechaHoraEmision="2022-09-06T16:15:26.424-06:00"
+                                    Tipo="RDON"
+                                    TipoPersoneria="1234"/>
+                <dte:Emisor AfiliacionIVA="EXE"
+                            CodigoEstablecimiento="1"
+                            NITEmisor="123456789"
+                            NombreComercial="NombreComercial"
+                            NombreEmisor="NombreEmisor">
+                    <dte:DireccionEmisor>
+						<dte:Direccion>DireccionEmisor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioEmisor</dte:Municipio>
+						<dte:Departamento>DepartamentoEmisor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor IDReceptor="123456789"
+                              NombreReceptor="NombreReceptor">
+                    <dte:DireccionReceptor>
+						<dte:Direccion>DireccionReceptor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioReceptor</dte:Municipio>
+						<dte:Departamento>DepartamentoReceptor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionReceptor>
+                </dte:Receptor>
+                <dte:Frases>
+                    <dte:Frase TipoFrase="4"
+                               CodigoEscenario="4"/>
+                </dte:Frases>
+                <dte:Items>
+                    <dte:Item BienOServicio="S"
+                              NumeroLinea="1">
+                        <dte:Cantidad>1.0</dte:Cantidad>
+                        <dte:Descripcion>Donacion</dte:Descripcion>
+                        <dte:PrecioUnitario>100.0</dte:PrecioUnitario>
+                        <dte:Precio>100.0</dte:Precio>
+                        <dte:Total>100.0</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:GranTotal>100.0</dte:GranTotal>
+                </dte:Totales>
+            </dte:DatosEmision>
+        </dte:DTE>
+    </dte:SAT>
+</dte:GTDocumento>

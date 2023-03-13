@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dte:GTDocumento xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 Version="0.1">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales CodigoMoneda="GTQ"
+                                    FechaHoraEmision="2022-07-07T15:58:26.188-06:00"
+                                    Tipo="FACT"/>
+                <dte:Emisor AfiliacionIVA="GEN"
+                            CodigoEstablecimiento="1"
+                            NITEmisor="1234"
+                            NombreComercial="NombreComercial"
+                            NombreEmisor="NombreEmisor">
+                    <dte:DireccionEmisor>
+                        <dte:Direccion>DireccionEmisor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioEmisor</dte:Municipio>
+                        <dte:Departamento>DepartamentoEmisor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor IDReceptor="CF"
+                              NombreReceptor="CF">
+                    <dte:DireccionReceptor>
+                        <dte:Direccion>DireccionReceptor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioReceptor</dte:Municipio>
+                        <dte:Departamento>DepartamentoReceptor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionReceptor>
+                </dte:Receptor>
+                <dte:Frases>
+                    <dte:Frase TipoFrase="1"
+                               CodigoEscenario="2"/>
+                    <dte:Frase TipoFrase="4"
+                               CodigoEscenario="9"/>
+                </dte:Frases>
+                <dte:Items>
+                    <dte:Item BienOServicio="B"
+                              NumeroLinea="1">
+                        <dte:Cantidad>1</dte:Cantidad>
+                        <dte:UnidadMedida>UN</dte:UnidadMedida>
+                        <dte:Descripcion>Un producto exento</dte:Descripcion>
+                        <dte:PrecioUnitario>35</dte:PrecioUnitario>
+                        <dte:Precio>35</dte:Precio>
+                        <dte:Impuestos>
+                            <dte:Impuesto>
+                                <dte:NombreCorto>IVA</dte:NombreCorto>
+                                <dte:CodigoUnidadGravable>2</dte:CodigoUnidadGravable>
+                                <dte:MontoGravable>35</dte:MontoGravable>
+                                <dte:MontoImpuesto>0</dte:MontoImpuesto>
+                            </dte:Impuesto>
+                        </dte:Impuestos>
+                        <dte:Total>35</dte:Total>
+                    </dte:Item>
+                    <dte:Item BienOServicio="B"
+                              NumeroLinea="2">
+                        <dte:Cantidad>1</dte:Cantidad>
+                        <dte:UnidadMedida>UN</dte:UnidadMedida>
+                        <dte:Descripcion>Producto NO exento</dte:Descripcion>
+                        <dte:PrecioUnitario>30</dte:PrecioUnitario>
+                        <dte:Precio>30</dte:Precio>
+                        <dte:Impuestos>
+                            <dte:Impuesto>
+                                <dte:NombreCorto>IVA</dte:NombreCorto>
+                                <dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+                                <dte:MontoGravable>26.7857142857</dte:MontoGravable>
+                                <dte:MontoImpuesto>3.2142857143</dte:MontoImpuesto>
+                            </dte:Impuesto>
+                        </dte:Impuestos>
+                        <dte:Total>30</dte:Total>
+                    </dte:Item>
+                    <dte:Item BienOServicio="B"
+                              NumeroLinea="3">
+                        <dte:Cantidad>1</dte:Cantidad>
+                        <dte:UnidadMedida>UN</dte:UnidadMedida>
+                        <dte:Descripcion>Otro producto NO exento</dte:Descripcion>
+                        <dte:PrecioUnitario>700</dte:PrecioUnitario>
+                        <dte:Precio>700</dte:Precio>
+                        <dte:Impuestos>
+                            <dte:Impuesto>
+                                <dte:NombreCorto>IVA</dte:NombreCorto>
+                                <dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+                                <dte:MontoGravable>625</dte:MontoGravable>
+                                <dte:MontoImpuesto>75</dte:MontoImpuesto>
+                            </dte:Impuesto>
+                        </dte:Impuestos>
+                        <dte:Total>700</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:TotalImpuestos>
+                        <dte:TotalImpuesto NombreCorto="IVA"
+                                           TotalMontoImpuesto="78.2142857143"/>
+                    </dte:TotalImpuestos>
+                    <dte:GranTotal>765</dte:GranTotal>
+                </dte:Totales>
+            </dte:DatosEmision>
+        </dte:DTE>
+    </dte:SAT>
+</dte:GTDocumento>

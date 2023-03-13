@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dte:GTDocumento xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 Version="0.1"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales FechaHoraEmision="2022-05-04T16:59:20-06:00"
+                                    CodigoMoneda="GTQ"
+                                    Tipo="FPEQ"/>
+                <dte:Emisor AfiliacionIVA="GEN"
+                            CodigoEstablecimiento="1"
+                            NITEmisor="1234"
+                            NombreComercial="NombreComercial"
+                            NombreEmisor="NombreEmisor">
+                    <dte:DireccionEmisor>
+                        <dte:Direccion>DireccionEmisor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioEmisor</dte:Municipio>
+                        <dte:Departamento>DepartamentoEmisor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor IDReceptor="CF"
+                              NombreReceptor="NombreReceptor"/>
+                <dte:Frases>
+                    <dte:Frase TipoFrase="3"
+                               CodigoEscenario="1"/>
+                </dte:Frases>
+                <dte:Items>
+                    <dte:Item NumeroLinea="1"
+                              BienOServicio="B">
+                        <dte:Cantidad>1</dte:Cantidad>
+                        <dte:UnidadMedida>UND</dte:UnidadMedida>
+                        <dte:Descripcion>Descripcion del producto</dte:Descripcion>
+                        <dte:PrecioUnitario>15.0</dte:PrecioUnitario>
+                        <dte:Precio>15.0</dte:Precio>
+                        <dte:Descuento>0.0</dte:Descuento>
+                        <dte:Total>15.0</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:GranTotal>15.0</dte:GranTotal>
+                </dte:Totales>
+            </dte:DatosEmision>
+        </dte:DTE>
+    </dte:SAT>
+</dte:GTDocumento>

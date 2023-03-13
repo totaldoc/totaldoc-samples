@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dte:GTDocumento xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 xmlns:cex="http://www.sat.gob.gt/face2/ComplementoExportaciones/0.1.0"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 Version="0.1">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales CodigoMoneda="GTQ"
+                                    Exp="SI"
+                                    FechaHoraEmision="2022-09-05T09:00:18.316-06:00"
+                                    Tipo="FACT"/>
+                <dte:Emisor NITEmisor="1234"
+                            NombreEmisor="RazonSocial"
+                            CodigoEstablecimiento="1"
+                            NombreComercial="NombreComercial"
+                            CorreoEmisor="Correo@Emisor.Opcional"
+                            AfiliacionIVA="GEN">
+                    <dte:DireccionEmisor>
+                        <dte:Direccion>DireccionEmisor</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>MunicipioEmisor</dte:Municipio>
+                        <dte:Departamento>DepartamentoEmisor</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor IDReceptor="CF"
+                              NombreReceptor="NombreReceptor">
+                    <dte:DireccionReceptor>
+                        <dte:Direccion>CIUDAD</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>Municipio</dte:Municipio>
+                        <dte:Departamento>Departamento</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionReceptor>
+                </dte:Receptor>
+                <dte:Frases>
+                    <dte:Frase TipoFrase="1"
+                               CodigoEscenario="1"/>
+                    <dte:Frase TipoFrase="4"
+                               CodigoEscenario="1"/>
+                </dte:Frases>
+                <dte:Items>
+                    <dte:Item BienOServicio="B"
+                              NumeroLinea="1">
+                        <dte:Cantidad>1</dte:Cantidad>
+                        <dte:UnidadMedida>UN</dte:UnidadMedida>
+                        <dte:Descripcion>Producto exportado</dte:Descripcion>
+                        <dte:PrecioUnitario>100</dte:PrecioUnitario>
+                        <dte:Precio>100</dte:Precio>
+                        <dte:Descuento>0</dte:Descuento>
+                        <dte:Impuestos>
+                            <dte:Impuesto>
+                                <dte:NombreCorto>IVA</dte:NombreCorto>
+                                <dte:CodigoUnidadGravable>2</dte:CodigoUnidadGravable>
+                                <dte:MontoGravable>100</dte:MontoGravable>
+                                <dte:MontoImpuesto>0</dte:MontoImpuesto>
+                            </dte:Impuesto>
+                        </dte:Impuestos>
+                        <dte:Total>100</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:TotalImpuestos>
+                        <dte:TotalImpuesto NombreCorto="IVA"
+                                           TotalMontoImpuesto="0"/>
+                    </dte:TotalImpuestos>
+                    <dte:GranTotal>100</dte:GranTotal>
+                </dte:Totales>
+                <dte:Complementos>
+                    <dte:Complemento IDComplemento="EXP"
+                                     NombreComplemento="Exportacion"
+                                     URIComplemento="http://www.sat.gob.gt/face2/ComplementoExportaciones/0.1.0">
+                        <cex:Exportacion Version="1">
+                            <cex:NombreConsignatarioODestinatario>PUERTOS</cex:NombreConsignatarioODestinatario>
+                            <cex:DireccionConsignatarioODestinatario>CIUDAD</cex:DireccionConsignatarioODestinatario>
+                            <cex:INCOTERM>ZZZ</cex:INCOTERM>
+                        </cex:Exportacion>
+                    </dte:Complemento>
+                </dte:Complementos>
+            </dte:DatosEmision>
+        </dte:DTE>
+        <dte:Adenda>
+            <Adenda1>7.5</Adenda1>
+        </dte:Adenda>
+    </dte:SAT>
+</dte:GTDocumento>

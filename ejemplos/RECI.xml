@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dte:GTDocumento xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 Version="0.1"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0">
+    <dte:SAT ClaseDocumento="dte">
+        <dte:DTE ID="DatosCertificados">
+            <dte:DatosEmision ID="DatosEmision">
+                <dte:DatosGenerales CodigoMoneda="GTQ"
+                                    FechaHoraEmision="2022-03-07T11:24:51.000-06:00"
+                                    Tipo="RECI"/>
+                <dte:Emisor AfiliacionIVA="GEN"
+                            CodigoEstablecimiento="1"
+                            
+                            NITEmisor="100826741"
+                            NombreComercial="NombreComercial"
+                            NombreEmisor="NombreEmisor">
+                    <dte:DireccionEmisor>
+                        <dte:Direccion>GUATEMALA</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio>GUATEMALA</dte:Municipio>
+                        <dte:Departamento>GUATEMALA</dte:Departamento>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionEmisor>
+                </dte:Emisor>
+                <dte:Receptor 
+                              IDReceptor="100826741"
+                              NombreReceptor="NombreReceptor">
+                    <dte:DireccionReceptor>
+                        <dte:Direccion>CIUDAD</dte:Direccion>
+                        <dte:CodigoPostal>0</dte:CodigoPostal>
+                        <dte:Municipio/>
+                        <dte:Departamento/>
+                        <dte:Pais>GT</dte:Pais>
+                    </dte:DireccionReceptor>
+                </dte:Receptor>
+                <dte:Frases>
+                    <dte:Frase TipoFrase="4"
+                               CodigoEscenario="8"/>
+                </dte:Frases>
+                <dte:Items>
+                    <dte:Item BienOServicio="S"
+                              NumeroLinea="1">
+                        <dte:Cantidad>3.0000000000</dte:Cantidad>
+                        <dte:Descripcion>Matrícula de inscripción</dte:Descripcion>
+                        <dte:PrecioUnitario>9.9000000000</dte:PrecioUnitario>
+                        <dte:Precio>29.7000</dte:Precio>
+                        <dte:Descuento>0</dte:Descuento>
+                        <dte:Total>29.7000</dte:Total>
+                    </dte:Item>
+                </dte:Items>
+                <dte:Totales>
+                    <dte:GranTotal>29.70</dte:GranTotal>
+                </dte:Totales>
+            </dte:DatosEmision>
+        </dte:DTE>
+    </dte:SAT>
+</dte:GTDocumento>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dte:GTDocumento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:cfc="http://www.sat.gob.gt/dte/fel/CompCambiaria/0.1.0"
+                 xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                 xsi:schemaLocation="http://www.sat.gob.gt/dte/fel/0.2.0"
+                 Version="0.1"
+                 xmlns:dte="http://www.sat.gob.gt/dte/fel/0.2.0">
+	<dte:SAT ClaseDocumento="dte">
+		<dte:DTE ID="DatosCertificados">
+			<dte:DatosEmision ID="DatosEmision">
+				<dte:DatosGenerales Tipo="FCAM"
+				                    FechaHoraEmision="2022-02-15T12:41:01.670-06:00"
+				                    CodigoMoneda="GTQ"/>
+				<dte:Emisor NITEmisor="1234"
+				            NombreEmisor="RazonSocial"
+				            CodigoEstablecimiento="1"
+				            NombreComercial="NombreComercial"
+				            CorreoEmisor="Correo@Emisor.Opcional"
+				            AfiliacionIVA="GEN">
+					<dte:DireccionEmisor>
+						<dte:Direccion>DireccionEmisor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioEmisor</dte:Municipio>
+						<dte:Departamento>DepartamentoEmisor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionEmisor>
+				</dte:Emisor>
+				<dte:Receptor IDReceptor="CF"
+				              NombreReceptor="NombreReceptor"
+				              CorreoReceptor="Correo@Receptor.Opcional">
+					<dte:DireccionReceptor>
+						<dte:Direccion>DireccionReceptor</dte:Direccion>
+						<dte:CodigoPostal>0</dte:CodigoPostal>
+						<dte:Municipio>MunicipioReceptor</dte:Municipio>
+						<dte:Departamento>DepartamentoReceptor</dte:Departamento>
+						<dte:Pais>GT</dte:Pais>
+					</dte:DireccionReceptor>
+				</dte:Receptor>
+				<dte:Frases>
+					<dte:Frase TipoFrase="1"
+					           CodigoEscenario="1"/>
+				</dte:Frases>
+				<dte:Items>
+					<dte:Item NumeroLinea="1"
+					          BienOServicio="B">
+						<dte:Cantidad>1</dte:Cantidad>
+						<dte:UnidadMedida>UN</dte:UnidadMedida>
+						<dte:Descripcion>Descripcion</dte:Descripcion>
+						<dte:PrecioUnitario>8.5</dte:PrecioUnitario>
+						<dte:Precio>8.5</dte:Precio>
+						<dte:Descuento>5</dte:Descuento>
+						<dte:Impuestos>
+							<dte:Impuesto>
+								<dte:NombreCorto>IVA</dte:NombreCorto>
+								<dte:CodigoUnidadGravable>1</dte:CodigoUnidadGravable>
+								<dte:MontoGravable>3.12455357</dte:MontoGravable>
+								<dte:MontoImpuesto>0.3749464284</dte:MontoImpuesto>
+							</dte:Impuesto>
+						</dte:Impuestos>
+						<dte:Total>3.5000000000</dte:Total>
+					</dte:Item>
+				</dte:Items>
+				<dte:Totales>
+					<dte:TotalImpuestos>
+						<dte:TotalImpuesto NombreCorto="IVA"
+						                   TotalMontoImpuesto="0.3749464284"/>
+					</dte:TotalImpuestos>
+					<dte:GranTotal>3.5</dte:GranTotal>
+				</dte:Totales>
+				<dte:Complementos>
+					<dte:Complemento IDComplemento="AbonosFacturaCambiaria"
+					                 NombreComplemento="AbonosFacturaCambiaria"
+					                 URIComplemento="http://www.sat.gob.gt/dte/fel/CompCambiaria/0.1.0">
+						<cfc:AbonosFacturaCambiaria Version="1"
+						                            xmlns:cfc="http://www.sat.gob.gt/dte/fel/CompCambiaria/0.1.0">
+							<cfc:Abono>
+								<cfc:NumeroAbono>1</cfc:NumeroAbono>
+								<cfc:FechaVencimiento>2022-03-15</cfc:FechaVencimiento>
+								<cfc:MontoAbono>3.5</cfc:MontoAbono>
+							</cfc:Abono>
+						</cfc:AbonosFacturaCambiaria>
+					</dte:Complemento>
+				</dte:Complementos>
+			</dte:DatosEmision>
+		</dte:DTE>
+		<dte:Adenda>
+			<dte:SERIE_INT>AA</dte:SERIE_INT>
+			<dte:NUMERO_INT>5545</dte:NUMERO_INT>
+			<dte:VENDEDOR_CODIGO_INT>9</dte:VENDEDOR_CODIGO_INT>
+		</dte:Adenda>
+	</dte:SAT>
+</dte:GTDocumento>
